@@ -1,7 +1,7 @@
 #include <iostream>
 #include <fstream>
 #include <string>
-#include "autenticator.h"
+#include "isStandardized.h"
 using namespace std;
 
 int main(){
