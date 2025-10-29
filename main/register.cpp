@@ -1,10 +1,10 @@
 #include <iostream>
 #include <fstream>
 #include <string>
-#include "isStandardized.h"
+#include "autenticator.h"
 using namespace std;
 
-int main(){
+int registering(){
     string recordUserName, recordUserPassword;
 
     cout << "Register your username: " << endl;
