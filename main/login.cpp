@@ -7,7 +7,7 @@ using namespace std;
 int login(){
     string loginUsername, loginPassword, joinUsernamePassword, iteratingLine;
 
-    cout << "Enter your usernamme: " << endl;
+    cout << "Enter your username: " << endl;
     getline(cin, loginUsername);
     while (isBlank(loginUsername) == true){
         getline(cin, loginUsername);

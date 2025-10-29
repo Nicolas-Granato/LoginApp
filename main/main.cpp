@@ -1,4 +1,5 @@
 #include <iostream>
+#include <limits>
 #include "autenticator.h"
 using namespace std;
 
@@ -22,9 +23,10 @@ int selectingFunction(int number){
 int main(){
     int selection;
     
-    
     cout << "Select the function (0 = Exit/1 = Login/2 = Register)" << endl;
     cin >> selection;
+    cin.ignore(numeric_limits<streamsize>::max(), '\n'); /*basically what we call a "gambiarra"*/
+    
     while (selectingFunction(selection) != 0){
         cout << "Select the function (0 = Exit/1 = Login/2 = Register)" << endl;
         cin >> selection;
