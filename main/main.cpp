@@ -2,21 +2,33 @@
 #include "autenticator.h"
 using namespace std;
 
-int selectionFunction(int number){
+int selectingFunction(int number){
     if (number == 1){
         login();
+        return 0;
     }
-    if (number == 2){
+    else if (number == 2){
         registering();
+        return 2;
     }
+    else if (number == 0){
+        cout << "Leaving the program..." << endl;
+        return 0;
+    }
+    cout << "Function not defined" << endl;
+    return 1;
 }
 
 int main(){
     int selection;
-
-    cout << "Select the function (1 = Login/2 = Register)" << endl;
+    
+    
+    cout << "Select the function (0 = Exit/1 = Login/2 = Register)" << endl;
     cin >> selection;
-    selectionFunction(selection);
+    while (selectingFunction(selection) != 0){
+        cout << "Select the function (0 = Exit/1 = Login/2 = Register)" << endl;
+        cin >> selection;
+    }
 
     return 0;
 }

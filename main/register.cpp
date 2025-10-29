@@ -13,7 +13,7 @@ int registering(){
         getline(cin, recordUserName);
     }
 
-    cout << "Register your password: " << endl;
+    cout << "Register your password(your password must be at least 8 characters long): " << endl;
     getline (cin, recordUserPassword);
     while (isBlank(recordUserPassword) == true){
         getline (cin, recordUserPassword);
