@@ -30,6 +30,7 @@ int main(){
     while (selectingFunction(selection) != 0){
         cout << "Select the function (0 = Exit/1 = Login/2 = Register)" << endl;
         cin >> selection;
+        cin.ignore(numeric_limits<streamsize>::max(), '\n');
     }
 
     return 0;
